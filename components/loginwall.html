@@ -12,7 +12,7 @@ const generateTransactionId = () => {
   return `${base36Timestamp}${base36RandomInt}`;
 };
 
-const setUrlParams = (source, campaign, trxId) => {
+const getUrlParams = (source, campaign, trxId) => {
   const utmParams = `&utm_medium=paywall&utm_source=${source}&utm_campaign=${campaign}`;
   const logintxidParam = `logintxid=${trxId}`;
   const sep = `?`;
@@ -61,11 +61,18 @@ const loginRequiredPaywall = (options) => {
   const trxId = generateTransactionId();
   const pwCreateLink = document.getElementById('js-paywall-create-account-link');
   const pwLoginLink = document.getElementById('js-paywall-login-link');
-  const createLinkUrl =
-    pwCreateLink.href + setUrlParams(options.channel, 'login-paywall-signup', trxId);
-  pwCreateLink.href = createLinkUrl;
+  const createLinkUrlParams = getUrlParams(options.channel, 'login-paywall-signup', trxId);
+  if (pwCreateLink.href.includes("luotunnus")) {
+    console.log('luotunnus found -> old way');
+    pwCreateLink.href = pwCreateLink.href + createLinkUrlParams;
+  } else {
+    console.log('luotunnus NOT found -> new way');
+    const newParams = createLinkUrlParams.replace("next=", "content_url=" + encodeURIComponent(window.location.origin));
+    const hasParams = pwCreateLink.href.includes("?");
+    pwCreateLink.href = pwCreateLink.href + (hasParams ? newParams : newParams.replace("&", "?"));
+  }
   const loginLinkUrl =
-    pwLoginLink.href + setUrlParams(options.channel, 'login-paywall-logins', trxId);
+    pwLoginLink.href + getUrlParams(options.channel, 'login-paywall-logins', trxId);
   pwLoginLink.href = loginLinkUrl;
 
   window.dataLayer.push({
