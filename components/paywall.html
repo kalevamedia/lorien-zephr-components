@@ -1,0 +1,474 @@
+<style>
+.paywall-css-container {
+  line-height: 1.3;
+  background-color: white;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .paywall-css-container {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .paywall-css-container {
+    font-size: 14px;
+  }
+}
+
+.button,
+.grid--main .btn-primary {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #fff;
+}
+
+.paywall-css-container .button,
+.grid--main .btn-primary {
+  box-sizing: content-box;
+  display: inline-block;
+  line-height: 30px;
+  padding: 2px 20px;
+  border: 0 none;
+}
+
+.paywall-css-container .grid--main a {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0062a9;
+}
+
+.paywall-css-container {
+  border-top: none;
+  margin: 0;
+}
+
+.paywall-css-container .grid--main {
+  border-top: none;
+}
+
+.paywall-css-container .paywall__center-box,
+.paywall__footer {
+  min-width: 300px;
+  max-width: 650px;
+}
+
+.paywall-css-container .paywall__center-box {
+  margin: 10px auto;
+  padding: 25px 10px;
+  clear: both;
+  background: #f6f4f0;
+}
+
+@media screen and (min-width: 768px) {
+  .paywall-css-container .paywall__center-box {
+    margin: 20px auto;
+    padding: 50px 10px;
+  }
+}
+
+.paywall-css-container .paywall__full-box {
+  margin: 0 -10px;
+  padding: 25px 20px;
+  clear: both;
+  background: #f6f4f0;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .paywall__full-box {
+    padding: 50px 30px;
+  }
+}
+
+.paywall-css-container .paywall__page__content {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .paywall__page__content {
+    margin: 0;
+  }
+}
+
+.paywall-css-container .paywall__header {
+  border-top: 3px solid #8b784a;
+  position: relative;
+  height: 34px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .paywall__header {
+    height: 60px;
+    margin-top: 30px;
+  }
+}
+
+.paywall-css-container .paywall__star {
+  background-image: url("https://mpcdn.kalevamedia.fi/staticfiles/profilemanagement/img/tahti.9e29f07041fe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: -17px;
+  left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .paywall__star {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 20px;
+  }
+}
+
+.paywall-css-container .main-title {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  color: #18191a;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .main-title {
+    font-size: 30px;
+  }
+}
+
+.paywall-css-container .sub-title {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .sub-title {
+    font-size: 20px;
+  }
+}
+
+.paywall-css-container .paywall-landing-page .btn-primary {
+  font-weight: bold;
+}
+
+.paywall-css-container .paywall-landing-page .paywall__login-link a {
+  font-weight: bold;
+}
+
+.paywall-css-container .grid--main .btn-primary {
+  background: #8b784a;
+  border: 1px solid #8b784a;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.paywall-css-container .grid--main .btn-primary:hover,
+.grid--main .btn-primary:focus {
+  background: #c5bca5;
+  border: 1px solid #c5bca5;
+}
+
+.paywall-css-container .grid--main .btn-primary:disabled {
+  background: #d4d4d4;
+  color: white;
+  border: 1px solid #d4d4d4;
+}
+
+.paywall-css-container .paywall__footer {
+  padding-right: 30px;
+  text-align: right;
+  margin: 55px auto 0 auto;
+  position: relative;
+}
+
+.paywall-css-container .paywall__benefits {
+  margin-bottom: 20px;
+}
+
+.paywall-css-container .paywall__benefits__benefit {
+  font-weight: 600;
+  letter-spacing: 0.001em;
+  margin: 10px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.paywall-css-container .paywall__benefits__benefit .paywall-benefits-checkmark {
+  position: absolute;
+  color: #65a500;
+  left: 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container
+    .paywall__benefits__benefit
+    .paywall-benefits-checkmark {
+    font-size: 22px;
+    line-height: 18px;
+  }
+}
+
+.paywall-css-container
+  .paywall__benefits__benefit
+  .paywall-benefits-checkmark:before {
+  content: "✓";
+}
+
+.paywall-css-container .paywall__cta {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.paywall-css-container .paywall__cta a {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .paywall-css-container .paywall__cta {
+    text-align: left;
+  }
+
+  .paywall-css-container .paywall__cta a {
+    width: auto;
+  }
+}
+
+/* DARK THEME STYLES START */
+body.gallery .paywall-css-container {
+  background-color: black;
+}
+body.videosite .paywall-css-container {
+  background-color: black;
+  position: relative;
+  top: -200px;
+  margin-bottom: -200px;
+}
+
+.article.-rich {
+  background: black;
+}
+.article.-rich .article__byline,
+.article.-rich .article__body > div:first-child, /* Zephr rendered fade element */
+.article.-rich .zephr-paywall-bottom-container {
+  display: none;
+}
+
+.article.-rich .paywall-css-container {
+  background: black;
+  margin: auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+@media screen and (min-width: 768px) {
+  .article.-rich .paywall-css-container {
+    width: calc(100% * 10/12);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article.-rich .paywall-css-container {
+    width: calc((100% - 48px) * 8/12);
+    max-width: 850px;
+  }
+}
+
+body.videosite .paywall-css-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: -200px;
+  left: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(35%, black),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(to top, black 35%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 1)),
+    color-stop(50%, rgba(0, 0, 0, 0.3)),
+    color-stop(65%, rgba(0, 0, 0, 0.15)),
+    color-stop(75.5%, rgba(0, 0, 0, 0.075)),
+    color-stop(82.85%, rgba(0, 0, 0, 0.037)),
+    color-stop(88%, rgba(0, 0, 0, 0.019)),
+    to(rgba(0, 0, 0, 0))
+  );
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.15) 65%,
+    rgba(0, 0, 0, 0.075) 75.5%,
+    rgba(0, 0, 0, 0.037) 82.85%,
+    rgba(0, 0, 0, 0.019) 88%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.article.-rich .paywall-css-container *,
+body.videosite .paywall-css-container *,
+body.gallery .paywall-css-container *,
+.article.-rich .grid--main a,
+body.videosite .grid--main a,
+body.gallery .grid--main a {
+  color: white;
+}
+
+.article.-rich .paywall-css-container .grid--main a,
+body.videosite .paywall-css-container .grid--main a,
+body.gallery .paywall-css-container .grid--main a {
+  text-decoration: underline;
+}
+
+.article.-rich .paywall-css-container .grid--main .btn-primary,
+body.videosite .paywall-css-container .grid--main .btn-primary,
+body.gallery .paywall-css-container .grid--main .btn-primary {
+  background: white;
+  color: #8c784a;
+  border-color: #8c784a;
+  text-decoration: none;
+}
+
+.article.-rich .paywall-css-container .grid--main .btn-primary:hover,
+body.videosite .paywall-css-container .grid--main .btn-primary:hover,
+body.gallery .paywall-css-container .grid--main .btn-primary:hover {
+  background: #c4bda6;
+}
+
+.article.-rich .paywall-css-container .paywall__star,
+body.videosite .paywall-css-container .paywall__star,
+body.gallery .paywall-css-container .paywall__star {
+  background-image: url("https://mpcdn.kalevamedia.fi/staticfiles/profilemanagement/img/tahti_black.5b0212578df5.png");
+}
+
+/* DARK THEME STYLES END */
+
+.zephr-video-cover {
+  display: inline !important;
+}
+
+.video-similar-widget__container {
+  display: none;
+}
+
+.discussion-container {
+  display: none !important;
+}
+</style>
+
+<script src="https://mpcdn.kalevamedia.fi/staticfiles/paywall/js/paywall.04adef173f57.js" type='text/javascript'></script>
+
+<link href='https://fonts.googleapis.com/css?family=Tinos:400,400italic%7COpen+Sans:300italic,400italic,400,300,600,700,800%7COpen+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+<div class="paywall-css-container">
+  <div class="grid grid--main">
+    <div class="paywall__header"><div class="paywall__star"></div></div>
+    <div class="paywall__page">
+      <div class="paywall__page__content">
+        <div class="paywall-landing-page js-paywall-offer-landing">
+          <h1 class="main-title">{{ title }}</h1>
+          <h2 class="sub-title">{{ subtitle }}</h2>
+          <div class="paywall__benefits">
+              <script>
+                const benefits = '{{ benefits }}';
+                benefits.split("&#10;").forEach((benefit) => {
+                  console.log('benefit', benefit);
+                  document.querySelector('.paywall__benefits').innerHTML += `
+                    <div class="paywall__benefits__benefit"><span class="paywall-benefits-checkmark"></span> ${benefit}</div>
+                  `;
+                });
+              </script>
+          </div>
+
+          <div class="paywall__cta">
+            <a class="btn btn-small btn-primary js-cta-link js-parent-frame-link" href="{{ call-to-action-url }}">{{ call-to-action-text }}</a>
+          </div>
+
+          {{^logged-in}}
+          <p class="paywall__login-link">
+            <a class="js-login-link js-parent-frame-link" href="{{ login-link-url }}">{{ login-link-text }}</a>
+          </p>
+          {{/logged-in}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // KalevaPaywall.init();
+  const searchParams = new URLSearchParams(document.location.search);
+  const kvatxid = searchParams.get('kvatxid') || KalevaPaywall.generateTransactionId();
+
+  const paywallSlug = `${window.digitalData.channel.slug}-paywall`;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+      'event': 'Paywall hit',
+      'paywallSlug': paywallSlug,
+      'kvatxid': kvatxid,
+  });
+
+  const ctaLink = document.querySelector('a.js-cta-link');
+
+  // replicate utm params
+  new URLSearchParams(KalevaPaywall.getUtmParams()).forEach((value, key) => {
+      console.log('replicating', key, value);
+      ctaLink.href = KalevaPaywall.setUrlParameter(ctaLink.href, key, value);
+  });
+
+  const currentUrlWithKvatxid = KalevaPaywall.setUrlParameter(document.location.href, 'kvatxid', kvatxid);
+
+  ctaLink.href = KalevaPaywall.setUrlParameter(ctaLink.href, 'kvatxid', kvatxid);
+  ctaLink.href = KalevaPaywall.setUrlParameter(ctaLink.href, 'content_url', currentUrlWithKvatxid);
+  console.log('CTA HREF:', ctaLink.href);
+
+  const loginLink = document.querySelector('a.js-login-link');
+  if (loginLink) {
+    loginLink.href = KalevaPaywall.setUrlParameter(loginLink.href, 'next', currentUrlWithKvatxid);
+  }
+
+	// KalevaPaywallContent.bindListeners();
+  const parentFrameLinks = document.querySelectorAll('a.js-parent-frame-link');
+  Array.prototype.forEach.call(parentFrameLinks, function (element) {
+		element.addEventListener("click", function (e) {
+			e.preventDefault();
+			if (e.target.className.indexOf('js-cta-link') > -1) {
+				window.dataLayer.push({
+					'event': 'Paywall CTA click'
+				});
+				setTimeout(function() {
+					document.location.href = e.target.getAttribute("href");
+				}, 100);
+			} else {
+				document.location.href = e.target.getAttribute("href");
+			}
+		});
+	});
+</script>
